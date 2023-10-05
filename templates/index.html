@@ -1,38 +1,134 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Luca D'Ambrosio </title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
-    <link href="C:\Users\luca2\Desktop\lucadambrosiopy\static\css\style.css" rel="stylesheet" type="text/css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
-
-<body>
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-    <script src="" async defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
-    <script src="..\static\js\script.js"></script>
-</body>
-
-</html>
+{% include 'header.html' %}
+<div class="row mt-1">
+    <div class="row mt-5 mb-5">
+        <div class="col-12 col-md-6 col-lg-4">
+            {% block image_content %}
+                <h1>{% block title_avatar %} {% endblock %}</h1>
+                {% for attachment in attachments %}
+                    <div>
+                        <img src="{{ url_for('static', filename='images/' ~ attachment['content']) }}" width="192" height="192" class="circle mb-4" />
+                    </div>
+                {% endfor %}
+            {% endblock %}
+                <p style="color: #495057;">
+                    I'm often chased by bugs like they're my shadow, but unlike Peter Pan,
+                    I don't have a coding fairy to help me fly out of trouble. Sometimes developer and huge nerd.
+                    Now at <strong>Rapsodoo</strong>.
+                </p>
+            <ul class="list-unstyled mb-5">
+                <li>
+                    <div class="cointainer d-inline-flex align-items-center distance_between_title_icons">
+                        <i class="fab fa-github"></i>
+                        <a class="custom-link" href="https://github.com/Dambrous">
+                            GitHub
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="cointainer d-inline-flex align-items-center distance_between_title_icons">
+                        <i class="fab fa-instagram-square"></i>
+                        <a class="custom-link" href="https://www.instagram.com/lucadambrosio___/">
+                            Instagram
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="cointainer d-inline-flex align-items-center distance_between_title_icons">
+                        <i class="fab fa-linkedin"></i>
+                        <a class="custom-link" href="https://www.linkedin.com/in/lucadambrosio-dev/">
+                            Linkedin
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="cointainer d-inline-flex align-items-center distance_between_title_icons">
+                        <i class="fas fa-envelope"></i>
+                        <a class="custom-link" href="mailto:luca2001dambro@gmail.com">luca2001dambro@gmail.com
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <div class="mb-4">
+                <a href="/download" class="btn btn-secondary">
+                    Download CV
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-8">
+            <div class="row">
+                <h2><strong>2023</strong></h2>
+                <div class="row">
+                    <div class="col-9">
+                        <a class="custom-link" href="https://github.com/Dambrous/lampeo">Lampeo</a>
+                    </div>
+                    <div class="col-3">
+                        <p class="text-end fst-italic"><strong>September 1-30</strong></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-9">
+                        <a class="custom-link" href="https://www.nephila.digital/it/blog/pycon-italia-2023/">Pycon</a>
+                    </div>
+                    <div class="col-3">
+                        <p class="text-end fst-italic"><strong>May 25-28</strong></p>
+                    </div>
+                </div>
+            </div>
+            <hr style="height: 1px;background-color: var(--hr-color);"/>
+            <div class="row">
+                <div class="col-9">
+                    <h2><strong>2022</strong></h2>
+                </div>
+                <div class="row">
+                    <div class="col-9">
+                        <a class="custom-link" href="https://2023.pycon.it/it/news/pycon-italia-2022-is-coming-back">Pycon</a>
+                    </div>
+                    <div class="col-3">
+                        <p class="text-end fst-italic"><strong>June 2–5</strong></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-9">
+                        <a class="custom-link"
+                           href="https://www2.uniecampus.it/facolta/facolta-ingegneria/corso-laurea-triennale-ingegneria-informatica-automazione-database.asp">
+                            Computer and Software Engineering - Ecampus</a>
+                    </div>
+                    <div class="col-3">
+                        <p class="text-end fst-italic"><strong>January 15</strong></p>
+                    </div>
+                </div>
+            </div>
+            <hr style="height: 1px;background-color: var(--hr-color);"/>
+            <div class="row">
+                <div class="col-9">
+                    <h2><strong>2021</strong></h2>
+                </div>
+                <div class="row">
+                    <div class="col-9">
+                        <a class="custom-link" href="https://www.rapsodoo.com/it">Joined Rapsodoo as back-end developer</a>
+                    </div>
+                    <div class="col-3">
+                        <p class="text-end fst-italic"><strong>November 29</strong></p>
+                    </div>
+                </div>
+            </div>
+            <hr style="height: 1px;background-color: var(--hr-color);"/>
+            <div class="row">
+                <div class="col-9">
+                    <h2><strong>2020</strong></h2>
+                </div>
+                <div class="row">
+                    <div class="col-9">
+                        <a class="custom-link"
+                               href="http://www.ing.univaq.it/cdl/mostra_corso.php?codice=I3N">
+                                Computer and Software Engineering - Università degli Studi dell'Aquila</a>
+                    </div>
+                    <div class="col-3">
+                        <p class="text-end fst-italic"><strong>October 1</strong></p>
+                    </div>
+                </div>
+            </div>
+            <hr style="height: 1px;background-color: var(--hr-color);"/>
+        </div>
+    </div>
+{% include 'footer.html' %}
