@@ -6,7 +6,7 @@ Ispirato al sito web del creatore di Bootstrap --> MarkOtto
 # Comandi da eseguire:
     - pip install -r requirements.txt
 
-lucadambrosiopy/
+# lucadambrosiopy/
         app.py
         README.md
         requirements.txt
