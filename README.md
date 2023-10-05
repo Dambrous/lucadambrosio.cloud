@@ -33,9 +33,9 @@ Ispirato al sito web del creatore di Bootstrap --> MarkOtto
     │   ├── lucadambrosio.db
 
 
-Connessione db MySqlite3 con Flask:
+* Connessione db MySqlite3 con Flask:
     - https://www.digitalocean.com/community/tutorials/how-to-use-an-sqlite-database-in-a-flask-application
-Icone utilizzate:
+* Icone utilizzate:
     - https://mdbootstrap.com/docs/standard/content-styles/icons/#section-icon-search
-Icone --> MySQL e PostgresSQL
+* Icone --> MySQL e PostgresSQL
     - http://fizzed.com/oss/font-mfizz/icon-postgres
