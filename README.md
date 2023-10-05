@@ -7,30 +7,30 @@ Ispirato al sito web del creatore di Bootstrap --> MarkOtto
     - pip install -r requirements.txt
 
 # lucadambrosiopy/
-        app.py
-        README.md
-        requirements.txt
-        templates/
-            index.html
-            404_not_found.html
-            about.html
-            education.html
-            footer.html
-            header.html
-            work.html
-        static/
-            css/
-                style.css
-            documents/
-                ..
-            images/
-                ..
-            js/
-                script.js
-        database/
-            init_db.py
-            db.db
-            lucadambrosio.db
+    ├── app.py
+    ├── README.md
+    ├── requirements.txt
+    ├── templates/
+    │   ├── index.html
+    │   ├── 404_not_found.html
+    │   ├── about.html
+    │   ├── education.html
+    │   ├── footer.html
+    │   ├── header.html
+    │   ├── work.html
+    ├── static/
+    │   ├── css/
+    │   │   ├── style.css
+    │   ├── documents/
+    │   │   ├── ..
+    │   ├── images/
+    │   │   ├── ..
+    │   ├── js/
+    │   │   ├── script.js
+    ├── database/
+    │   ├── init_db.py
+    │   ├── db.db
+    │   ├── lucadambrosio.db
 
 
 Connessione db MySqlite3 con Flask:
