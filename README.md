@@ -1,14 +1,14 @@
 # lucadambrosiopy
   - My own portfolio
 
-# [lucadambrosio.cloud](https://www.lucadambrosio.cloud/)
+* [lucadambrosio.cloud](https://www.lucadambrosio.cloud/)
   - visit -> lucadambrosio.cloud
 Ispirato al sito web del creatore di Bootstrap --> MarkOtto
 
 * Comandi da eseguire:
     - pip install -r requirements.txt
 
-* lucadambrosiopy/
+# lucadambrosiopy/
     ├── app.py
     ├── README.md
     ├── requirements.txt
