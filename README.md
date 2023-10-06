@@ -1,11 +1,9 @@
 # lucadambrosiopy
-  - My own portfolio
+  - My own portfolio --> [lucadambrosio.cloud](https://www.lucadambrosio.cloud/)
 
-* [lucadambrosio.cloud](https://www.lucadambrosio.cloud/)
-  - visit -> lucadambrosio.cloud
-Ispirato al sito web del creatore di Bootstrap --> MarkOtto
+Inspired --> MarkOtto
 
-* Comandi da eseguire:
+* Commands to do:
     - pip install -r requirements.txt
 
 # lucadambrosiopy/
@@ -35,9 +33,9 @@ Ispirato al sito web del creatore di Bootstrap --> MarkOtto
     │   ├── lucadambrosio.db
 
 
-* Connessione db MySqlite3 con Flask:
+* Connection db MySqlite3 with Flask:
     - https://www.digitalocean.com/community/tutorials/how-to-use-an-sqlite-database-in-a-flask-application
-* Icone utilizzate:
+* Icons:
     - https://mdbootstrap.com/docs/standard/content-styles/icons/#section-icon-search
-* Icone --> MySQL e PostgresSQL
+* icons --> MySQL and PostgresSQL
     - http://fizzed.com/oss/font-mfizz/icon-postgres
