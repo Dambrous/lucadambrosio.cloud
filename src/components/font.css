@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Roboto_Condensed";
+  src: url("../../public/fonts/Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "ProtestRiot-Regular";
+  src: url("../../public/fonts/Protest_Riot/ProtestRiot-Regular.ttf");
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../../public/fonts/Oswald/Oswald-VariableFont_wght.ttf");
+}
