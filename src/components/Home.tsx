@@ -181,7 +181,7 @@ export function Home() {
                       }}
                     >
                       <NavbarLink
-                        to={"documents/lucadambrosio_cv.pdf"}
+                        to={"documents/lucadambrosio_cv1.pdf"}
                         target="_blank"
                       >
                         <Button
