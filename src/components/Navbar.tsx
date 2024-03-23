@@ -21,7 +21,7 @@ const pagesDictRoutes: PagesDictRoutes = {
   Home: "/",
   Education: "/education",
   Work: "/works",
-  About: "/about",
+  "About Me": "/about",
 };
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

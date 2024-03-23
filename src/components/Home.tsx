@@ -126,22 +126,6 @@ export function Home() {
                         </ListItemButton>
                       </NavbarLink>
                     </Grow>
-                    <Grow in={checked} timeout={3000}>
-                      <NavbarLink
-                        to={"https://www.instagram.com/lucadambrosio___/"}
-                        target="_blank"
-                      >
-                        <ListItemButton>
-                          <ListItemIcon>
-                            <InstagramIcon />
-                          </ListItemIcon>
-                          <Box>
-                            <ListItemText primary="Instagram" />
-                            <Divider />
-                          </Box>
-                        </ListItemButton>
-                      </NavbarLink>
-                    </Grow>
                     <Grow in={checked} timeout={3500}>
                       <NavbarLink
                         to={"https://www.linkedin.com/in/lucadambrosio-dev/"}
@@ -153,6 +137,22 @@ export function Home() {
                           </ListItemIcon>
                           <Box>
                             <ListItemText primary="Linkedin" />
+                            <Divider />
+                          </Box>
+                        </ListItemButton>
+                      </NavbarLink>
+                    </Grow>
+                    <Grow in={checked} timeout={3000}>
+                      <NavbarLink
+                        to={"https://www.instagram.com/lucadambrosio___/"}
+                        target="_blank"
+                      >
+                        <ListItemButton>
+                          <ListItemIcon>
+                            <InstagramIcon />
+                          </ListItemIcon>
+                          <Box>
+                            <ListItemText primary="Instagram" />
                             <Divider />
                           </Box>
                         </ListItemButton>
@@ -181,7 +181,7 @@ export function Home() {
                       }}
                     >
                       <NavbarLink
-                        to={"documents/lucadambrosio_cv.pdf"}
+                        to={"documents/cv_luca_dambrosio.pdf"}
                         target="_blank"
                       >
                         <Button

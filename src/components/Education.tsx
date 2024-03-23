@@ -41,7 +41,7 @@ export function Education() {
                 <Divider />
               </Typography>
               <TypographyDateEducation sx={{ marginLeft: "auto" }}>
-                JAN 2022 - PRESENT
+                JAN 2021 - 2024
               </TypographyDateEducation>
             </Box>
             <Typography variant="h6" sx={{ fontFamily: "Roboto_Condensed" }}>
